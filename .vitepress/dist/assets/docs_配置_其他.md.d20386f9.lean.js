@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as r,Q as a}from"./chunks/framework.940e9916.js";const f=JSON.parse('{"title":"学习链接","description":"","frontmatter":{},"headers":[],"relativePath":"docs/配置/其他.md","filePath":"docs/配置/其他.md"}'),o={name:"docs/配置/其他.md"},s=a("",2),c=[s];function n(i,_,l,d,h,p){return r(),e("div",null,c)}const u=t(o,[["render",n]]);export{f as __pageData,u as default};

@@ -9,6 +9,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: '项目', link: '/docs/项目/小程序' },
+      { text: 'Vue', link: '/docs/Vue/指令' },
+
       { text: 'tools', link: '/docs/配置/环境配置' },
     ],
     sidebar: [
@@ -22,13 +24,18 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Vue',
+        items: [
+          { text: '指令', link: '/docs/Vue/指令' },
+        ]
+      },
+      {
         text: '配置',
         items: [
           { text: '环境配置', link: '/docs/配置/环境配置' },
           { text: '其他', link: '/docs/配置/其他' },
           { text: '部署', link: '/docs/配置/部署' },
           { text: 'git', link: '/docs/配置/git指令' },
-
         ]
       },
       

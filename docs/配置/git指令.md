@@ -1,3 +1,4 @@
+# 常用的git指令
 ## 本地已有仓库链接远程仓库
 1. 连接 `git remote add origin https://github.com/xxx/xxxxxx.git`
 2. 推到远程仓库 `git push --set-upstream origin main -f`

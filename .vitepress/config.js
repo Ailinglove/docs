@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "码上记录",
+  description: "这里记录了日常工作中见到的有趣的东西，包括但不限于代码、好用的网址...",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -11,22 +11,21 @@ export default defineConfig({
       { text: '项目', link: '/docs/项目/小程序' },
       { text: 'Vue', link: '/docs/Vue/指令' },
 
-      { text: 'tools', link: '/docs/配置/环境配置' },
+      { text: '问题解决', link: '/docs/配置/环境配置' },
     ],
     sidebar: [
       {
         text: '项目',
         items: [
           { text: '小程序', link: '/docs/项目/小程序' },
-          { text: '项目生成器', link: '/docs/项目/项目生成器' },
           { text: '圆环倒计时', link: '/docs/项目/倒计时圆环' },
-          { text: 'bug', link: '/docs/项目/bug' },
         ]
       },
       {
         text: 'Vue',
         items: [
-          { text: '指令', link: '/docs/Vue/指令' },
+          { text: '项目生成器', link: '/docs/项目/项目生成器' },
+          { text: '从0开始写一个v-loading指令', link: '/docs/Vue/指令' },
         ]
       },
       {
@@ -36,6 +35,13 @@ export default defineConfig({
           { text: '其他', link: '/docs/配置/其他' },
           { text: '部署', link: '/docs/配置/部署' },
           { text: 'git', link: '/docs/配置/git指令' },
+        ]
+      },
+      {
+        text: '问题解决',
+        items: [
+          { text: '问题', link: '/docs/问题解决/READEME' },
+        
         ]
       },
       

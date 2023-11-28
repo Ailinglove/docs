@@ -26,6 +26,8 @@ export default defineConfig({
         items: [
           { text: '项目生成器', link: '/docs/项目/项目生成器' },
           { text: '从0开始写一个v-loading指令', link: '/docs/Vue/指令' },
+          { text: '从0开始写一个vite插件', link: '/docs/Vue/consolePlugin插件' },
+
         ]
       },
       {

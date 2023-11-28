@@ -18,3 +18,6 @@ git remote rm origin
 git remote add origin https://github.com/xxx/xxxxxx.git
 ```
 
+## 修改已提交commit
+`git commit --amend "新的commit消息"`
+

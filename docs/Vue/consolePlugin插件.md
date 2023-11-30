@@ -163,6 +163,13 @@ transform(code, id){
   };  
 }
 ```
+demo运行方法
+```
+git clone https://github.com/Ailinglove/create-h5.git
+npm install
+npm run dev
+选择console-plugin即可
+```
   <img src="./image-16.png" width=300 >
 
 

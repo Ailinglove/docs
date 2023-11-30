@@ -4,7 +4,7 @@
 h5开发中经常会用console进行调试，有时候console多了难以查找是在哪里打印出的console，如下左图所示；期望改造后的console如下右图，可以打印出当前console所在的文件，行数
 | 改造前        |      改造后      | 
 | ------------- | :-----------: | 
-| <img src='image-3.png' style="width: 300px">| <img src='image-4.png' style="width: 300px"> | 
+| <img src='./image-3.png' style="width: 300px">| <img src='./image-4.png' style="width: 300px"> | 
 
 ## 认识插件
 1. rollup插件是一个对象，具有 属性、构建钩子、输出生成钩子中的一个或多个，并遵循特定的约定。当前已经有很多插件供开发者直接使用了，插件列表见https://github.com/rollup/awesome

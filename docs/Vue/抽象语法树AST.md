@@ -66,6 +66,7 @@ console.log('tlevi');
 |Literal||字面量，比如  'tlevi', 10
 |VariableDeclaration||变量表达式|
 |EmptyStatement||空语句节点，比如单独的分号|
+|ImportDeclaration||import 语句|
 
 - 在线代码转AST https://astexplorer.net/
 - 所有的节点类型 @babel/types https://babeljs.io/docs/babel-types

@@ -6,3 +6,16 @@ todo
 3. 学习课程 https://appewiejl9g3764.h5.xiaoeknow.com/p/course/column/p_61fb595ce4b0beaee4275e1e?type=3&share_user_id=u_62301ff390889_lB5gDj5iPW&share_type=5&scene=%E5%88%86%E4%BA%AB&entry=2&entry_type=2002
 
 https://vue3js.cn/reactivity/reactive.html
+
+H5低版本手机白屏问题 兼容问题
+低版本手机打开页面为空 vite 升级到vite4， 使用@vitejs/plugin-legacy， target配置targets: ['cover 99.5%'] browserslist
+```
+import legacy from '@vitejs/plugin-legacy';
+...
+  plugins: [
+    ...
+    legacy({
+      targets: ['cover 99.5%'],
+    }),
+  ],
+```

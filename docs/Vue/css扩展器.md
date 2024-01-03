@@ -3,7 +3,7 @@
 ## 变量
 - less
 ```
-@mainColor: 'red';
+@mainColor: red;
 nav{
   color: @mainColor;
 }
@@ -11,7 +11,7 @@ nav{
 
 - scss
 ```
-$mainColor: 'red';
+$mainColor: red;
 nav{
   color: $mainColor;
 }

@@ -25,10 +25,8 @@ class MyPromise{
         this.status = REJECTED;
         this.reason = reason;  
         this.onRejectedCallbacks.forEach((fn=>fn()))    
-    
       }    
     }
-
     executor(resolve, reject)
   }
   then(onFulfilled, onRejected){
@@ -39,10 +37,10 @@ class MyPromise{
     if(this.status === REJECTED){
       onRejected && onRejected(this.value);
     }
-    // if(this.status === PENDING){
-    //   onFulfilled && this.onResolvedCallbacks.push(() => onFulfilled(this.value));
-    //   onRejected && this.onRejectedCallbacks.push(() => onRejected(this.reason));
-    // }
+    if(this.status === PENDING){
+      onFulfilled && this.onResolvedCallbacks.push(() => onFulfilled(this.value));
+      onRejected && this.onRejectedCallbacks.push(() => onRejected(this.reason));
+    }
   }
 }
 

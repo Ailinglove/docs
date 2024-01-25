@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper1 {
+      display: flex;
+
+    }
+
+    .parent1,
+    .parent2,
+    .parent3,
+    .parent4,
+    .wrapper3 {
+      border: 1px solid red;
+    }
+
+    .parent2 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .box1 {
+      width: 100px;
+      height: 100px;
+      margin: 100px;
+      background: blanchedalmond;
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      margin: 100px;
+      background: rgb(112, 177, 144);
+    }
+
+    .parent3 {
+      margin: 100px;
+    }
+
+    .parent4 {
+      margin: 100px;
+      display: flex;
+    }
+
+    .box31,
+    .box41 {
+      /* width: 100px;
+      height: 100px; */
+      margin: 100px;
+      background: rgb(112, 177, 144);
+    }
+
+    .wrapper3 {
+      /* 为父元素开启BFC，使其能够包裹住浮动元素 */
+      /* overflow: hidden; */
+    }
+
+    .float {
+      width: 100px;
+      height: 100px;
+      background: blanchedalmond;
+      float: left
+    }
+
+    .normal {
+      /* width: 100%; */
+      height: 20px;
+      background: rgb(112, 177, 144);
+      /* display: flex; */
+      clear: both;
+
+    }
+
+    .wrapper3::after {
+      content: '';
+      clear: both;
+      /* 此时还不够: 因为::after元素是行内元素 */
+      display: flex;
+      /* 需要转换成为块元素 */
+      /* 虽然在这没用,但是需要知道display同时也开始了BFC属性 */
+    }
+  </style>
+</head>
+
+<body>
+  块级元素的垂直外边距会发生合并
+  <p>1. 外边距合并问题</p>
+  <div class="wrapper1">
+    <div class="parent1">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+    <div class="parent2">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+  </div>
+  <div class="wrapper2">
+    <div class="parent3">
+      <div class="box31"></div>
+    </div>
+    <div class="parent4">
+      <div class="box41"></div>
+    </div>
+  </div>
+
+  <div class="wrapper3">
+    <div class="float"></div>
+    <!-- <div class="normal"></div> -->
+  </div>
+
+  https://www.cnblogs.com/fitzlovecode/p/heightCollapse.html
+
+</body>
+
+</html>

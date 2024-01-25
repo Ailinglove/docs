@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      padding: 0 24px;
+      margin: 0;
+      height: 100vh;
+      color: white;
+      display: flex;
+
+    }
+
+    .parent {
+      border: 1px solid red;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      margin: 20px;
+    }
+
+    .son {
+      /* width: 100px;
+      height: 100px; */
+      border: 1px solid red;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .son1,
+    .son2,
+    .son3,
+    .son4 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+    }
+
+    .son1 {
+      /* border: 1px solid blue; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .son2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -50px;
+      margin-top: -50px;
+    }
+
+    .parent3 {
+
+      border: 1px solid blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parent4 {
+      display: table;
+    }
+
+    .son4 {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .what {
+      border: 1px solid black;
+      height: 50px;
+      width: 50px;
+      margin: 0 auto;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  absloute
+  <div class="parent">
+
+    margin: auto
+    <div class="son"></div>
+  </div>
+
+  <div class="parent parent1">
+    transform
+    <div class="son1"></div>
+  </div>
+
+  <div class="parent parent2">
+    margin-left: -box宽度
+    <div class="son2"></div>
+  </div>
+
+  relative
+  <div class="parent parent3">
+    <div class="son3"></div>
+  </div>
+
+  <div class="parent parent4">
+    <div class="son4">
+      <div class="what">
+        sss
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 # javascript
+https://doocs.github.io/leetcode/lc/1/
 1. `try...catch`只能捕捉到同步代码块的错误。
 ```javascript
 try {
@@ -50,9 +51,9 @@ p.then((res)=>{
 由用法可知，promise是一个类，接受一个 执行器作为输入
 ::: code-group
 
-<<< @/interview/promise.js[完整代码]
+<<< @/interview/code/promise.js[完整代码]
 
-<<< @/interview/promise.js{11-12,19,27,42-45}[异步代码高亮代码]
+<<< @/interview/code/promise.js{11-12,19,27,42-45}[异步代码高亮代码]
 
 ::: tip 用法升级 异步代码
 
@@ -104,8 +105,13 @@ const throttle = (fn, delay) => {
 const throttledScroll = throttle(log, 500);
 window.addEventListener('click', () => throttledScroll('sss'));
 ```
-这段代码是对点击做了节流，表现时，如果我快速点击文档，会按照每500ms的频率输入【哈哈哈哈哈】，而不是最后一次才运行
+这段代码是对点击做了节流，表现是，如果我快速点击文档，会按照每500ms的频率输入【哈哈哈哈哈】，而不是最后一次才运行
 - 使用场景
   - 防抖需要等待一段时间，确保事件不会被再次触发执行，可以用于搜索输入框；节流是一段时间内执行一次，可以用于滚动事件
   - 防抖适用于对实时性要求不高的场景，节流适合实时性要求更高的场景
 
+::: danger 举例说明
+不停的滚动页面，设置的500ms执行。
+防抖只有当滚动间隔大于500ms的时候才会执行。节流则是每隔500ms执行一次，只是限制了执行的频率。
+那么，如果持续滚动2s，`防抖`只执行了`1`次（最后一次），`节流`执行了`4`次（每500ms）。
+:::

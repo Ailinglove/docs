@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      border: 1px solid red;
+      height: 200vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <script>
+    const log = (e) => {
+      console.log('哈哈哈哈哈哈', e)
+    }
+
+    // 防抖，保证在这个时间段内只发生一次，事件触发后等待一定时间，若没有再次发生才执行fn
+    const debounce = (fn, delay) => {
+      let timer = null;
+      return (...arguments) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => {
+          fn.apply(this, arguments)
+        }, delay)
+      }
+    }
+
+    // 节流，保证一段时间内只允许触发一次，事件先执行，等一段时间，规定时间内不再次触发即可
+    const throttle = (fn, delay) => {
+      let throttled = false;
+      return (...arguments) => {
+        if (!throttled) {
+          throttled = true;
+          fn.apply(this, arguments);
+          setTimeout(() => {
+            throttled = false
+          }, delay)
+        }
+      }
+    }
+
+    const debouncedScroll = debounce(log, 500);
+    document.addEventListener('scroll', (e) => debouncedScroll('ss'))
+    // document.addEventListener('scroll', (e) => debounce(log, 500)('ss'))
+
+
+    const throttledScroll = throttle(log, 500);
+    window.addEventListener('click', () => throttledScroll('sss'));
+
+
+  </script>
+</body>
+
+</html>

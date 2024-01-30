@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container1{
+      display: grid;
+      /* grid-template-columns: 300px auto 300px;
+      grid-template-rows: 100px 200px 300px; */
+
+      grid-template: repeat(5, 100px) / repeat(5, 100px);
+      /* column-gap: 20px;
+      row-gap: 20px; */
+      gap: 20px;
+
+      /* justify-content: start; */
+      background-color: bisque;
+      grid-template-areas: 'a b c d e'
+                           'f g h i j'
+                           'k l m n o';
+
+    }
+    .box11{
+      grid-column-start: 1;
+      grid-column-end: 6;
+      background: red;
+    }
+    .box12{
+      background-color: aquamarine;
+      grid-row-start: 2;
+      grid-row-end: 4; 
+    }
+    .box13{
+      grid-column: 2 / 5;
+      grid-row: 2 / 4;
+    }
+    .box{
+      /* height: 300px; */
+      border: 1px solid red;
+    }
+
+    .container2{
+      width: 100%;
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+      grid-template-columns: repeat(auto-fit, 250px);
+      background-color: bisque;
+      gap: 20px;
+      justify-content: center;
+
+    }
+    .box1{
+      height: 100px;
+    }
+
+    .container3{
+      display: grid;
+      grid-template-rows: 500px;
+      grid-template-columns: 300px auto;
+      background-color: bisque;
+      gap: 20px;
+
+    }
+    .box31{
+      border: 1px solid red;
+    }
+    .box32{
+      border: 1px solid red;
+    }
+
+    .container4{
+      display: grid;
+      grid-template-rows: 500px;
+      grid-template-columns: 20% auto 20%;
+      background-color: bisque;
+      gap: 20px;
+
+    }
+    .box41, .box42, .box43{
+      border: 1px solid red;
+    }
+
+  .container5{
+    column-count: 5;
+  }
+  .box::before{
+    content: '伪元素：';
+  }
+  .box::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 40px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    margin-top: 4px;
+  }
+
+  a[title=special]{
+    color: red;
+  }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container1">
+    <div class="box box11"></div>
+    <div class="box box12"></div>
+    <div class="box box13"></div>
+    <div class="box box14"></div>
+    <div class="box box15"></div>
+    <div class="box box16"></div>
+    <div class="box box17"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+  <p>hhhh</p>
+  <div class="container2">
+    <div class="box1"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <p>两栏布局</p>
+  <div class="container3">
+    <div class="box31">第一列</div>
+    <div class="box32">第二列</div>
+  </div>
+  <p>三栏布局</p>
+  <div class="container4">
+    <div class="box41">第一列</div>
+    <div class="box42">第二列</div>
+    <div class="box43">第三列</div>
+  </div>
+
+  <p>多列布局</p>
+  <div class="container5">
+    <div class="box box51">第一列</div>
+    <div class="box box52">第二列</div>
+    <div class="box box53">第三列</div>
+    <div class="box box54">第三列</div>
+    <div class=" box box55">第三列</div>
+
+  </div>
+
+
+    <a href="https://baidu.com" title="special">链接1</a>
+    <a href="https://baidu.com">链接2</a>
+</body>
+
+</html>

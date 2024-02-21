@@ -148,3 +148,13 @@
   margin-top: 4px;
 }
 ```
+
+## 如何画一个圆
+1. border-radius： 50%;
+2. clip-path: circle(50%);
+3. svg
+```html
+<svg>
+  <circle class="circile" cx="50" cy="50" r="50"></circle>
+</svg>
+```

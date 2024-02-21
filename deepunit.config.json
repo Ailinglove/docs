@@ -1,0 +1,15 @@
+{
+  "documentation": "You can find documentation on these configs at https://www.npmjs.com/package/deepunit",
+  "frontendFramework": "",
+  "testingFramework": "jest",
+  "ignoredDirectories": [
+    "node_modules"
+  ],
+  "ignoredFiles": [],
+  "includeFailingTests": true,
+  "testSuffix": "test",
+  "testingLanguageOverride": "typescript",
+  "defaultBranch": "main",
+  "testCaseGoal": "edge cases",
+  "useOpenAI": false
+}

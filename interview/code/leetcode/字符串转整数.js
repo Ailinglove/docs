@@ -8,36 +8,34 @@ var myAtoi = function(s) {
   let res = [];
   let isPositive = undefined;
 
+  const isPrefix = (ch) => ['-', '+'].includes(ch);
+
   while(i<len){
     let ch = s[i]
     console.log(i,ch, res.length)
-    if(ch===' ' && res.length===0){
+    if(ch===' '){
+      if(res.length) break
       i++;
-    }else if(['-','+'].includes(ch) && res.length===0 && isPositive===undefined){
-      isPositive = ch==='-'?false: true;
-      
+    }else if(isPrefix(ch) && res.length===0){
+      res.push(ch)
       i++
-    }else if(+ch<=9 && +ch >=0 && ch!==' '){
-      console.log('sssss', ch)
+    }else if ((+ch <= 9 && +ch >= 0)) {
       res.push(ch);
-      i++
-    }else{
-      console.log('不是；', ch);
-
+      i++;
+    } else {
       break;
-
     }
   }
   let max = 2**31-1;
   let min = -(2 ** 31);
   let num = res.join('') || 0;
-  console.log('--',num)
-  let resnum = isPositive===false ? 0-num : num;
+  console.log(res, res.join(''))
+
   if(num>max || num<min){
-    return isPositive===false? min: max
+    return res[0]==='-'? min: max
   }
-  console.log(isPositive, res)
-  return resnum;
+
+  return isNaN(num)? 0: num;
 };
 
-console.log(myAtoi('  +42 123'));
+console.log(myAtoi('  +-123222'));

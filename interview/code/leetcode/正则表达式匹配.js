@@ -5,5 +5,5 @@
  */
 var isMatch = function(s, p) {};
 const s = 'abscdbbb',
-  p = '.*b*';
+  p = '. v*b*';
 console.log(isMatch(s, p));

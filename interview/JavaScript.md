@@ -1,5 +1,5 @@
 # javascript
-lettcode系列：https://doocs.github.io/leetcode/lc/1/
+lettcode系列：https://doocs.github.io/leetcode/lc/1/、https://biaodigit.github.io/LeetCode/0022/#%E9%A2%98%E7%9B%AE%EF%BC%9A%E6%8B%AC%E5%8F%B7%E7%94%9F%E6%88%90
 面试官系列：https://vue3js.cn/interview/
 1. `try...catch`只能捕捉到同步代码块的错误。
 ```javascript

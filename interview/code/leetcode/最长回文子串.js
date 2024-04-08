@@ -1,6 +1,7 @@
 /**
  * @param {string} s
  * @return {string}
+ * https://writings.sh/post/algorithm-longest-palindromic-substring
  */
 var longestPalindrome = function(s) {
   const len = s.length;

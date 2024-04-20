@@ -3,8 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: '码上记录',
-  description:
-    '这里记录了日常工作中见到的有趣的东西，包括但不限于代码、好用的网址...',
+  description: '这里记录了日常工作中见到的有趣的东西，包括但不限于代码、好用的网址...',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -33,6 +32,7 @@ export default defineConfig({
             { text: '抽象语法树', link: '/docs/Vue/抽象语法树AST' },
             { text: 'webpack', link: '/docs/Vue/webpack' },
             { text: 'css扩展器', link: '/docs/Vue/css扩展器' },
+            { text: 'vue项目性能优化片', link: '/docs/Vue/vue项目性能优化片' },
           ],
         },
         {
@@ -61,8 +61,6 @@ export default defineConfig({
     rewrites: {
       'interview/(.*)': ':pkg/基础.md',
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }],
   },
 });

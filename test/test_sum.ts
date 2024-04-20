@@ -1,12 +1,71 @@
-function sum(a:number,b:number){
-  if(b===0) return a/b;
-  if(a>100) return '超纲了';
-  let i=0;
-  let res=0;
-  while(i<10){
-    res+i
-  }
-  return res;
-}
+a={
+  "activityId": 0,
+  "desc": "",
+  "endTime": 0,
+  "name": "",
+  "raptorVersion": 3,
+  "startTime": 0,
+  "taskList": [
+    {
+      "taskDesc": "",
+      "taskId": "",
+      "taskName": "",
+      "taskStatus": 1,
+      "execCyclePeriodType": 0,
+      "execRewardType": 0,
+      "rewardThreshold": 0,
+      "subTaskRewardList": [
+        {
+          "subTaskConfig": {
+            "channelInfo": {
+              "channelId": "",
+              "channelName": ""
+            },
+            "componentId": "",
+            "configJson": "",
+            "crowdInfo": {
+              "isOriented": false,
+              "profileInfo": {
+                "1": ""
+              }
+            },
+            "dataMode": 0,
+            "execCyclePeriodType": 0,
+            "subTaskDesc": "",
+            "subTaskId": "",
+            "subTaskName": "",
+            "execLimitRule": 1,
+            "execConfig": {}
+          },
+          "rewardRule": {
+            "execLimitRule": 0,
+            "isReward": false,
+            "execRewardType": 0,
+            "userReceiveType": 0,
+            "singleReward": [
+              {}
+            ],
+            "rewardConfig": {},
+            "contractorConfig": {}
+          }
+        }
+      ],
+      rewardRule:{
+			
+			"isReward": true,
+			
+			"singleReward": [
+				{
 
-const c = sum(10,20);
+					"isRandomReward": false,
+
+				}
+			],
+			"rewardConfig": {}
+			},
+      "subTaskRuleFormula": "",
+      "name": "",
+      "desc": ""
+    }
+  ]
+}

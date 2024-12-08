@@ -1,5 +1,6 @@
 # 什么是GSAP
-GSAP(GreenSock Animation Platform)是一个非常炫酷的动画平台，目前已经被1100万的网站使用，其中还有大量的获奖网站。GSAP可以将任何Javascript可以获取的元素动起来。GSAP可以让任何UI、SVG、Treejs、React动起来。
+![alt text](/images/gsap/gsap.png)
+[GSAP(GreenSock Animation Platform)](https://gsap.com/)是一个非常炫酷的动画平台，目前已经被1100万的网站使用，其中还有大量的获奖网站。GSAP可以将任何Javascript可以获取的元素动起来。GSAP可以让任何UI、SVG、Treejs、React动起来。
 
 核心库：可以创建非常快、性能非常高、跨浏览器的动画
 

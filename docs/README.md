@@ -11,3 +11,7 @@ features:
   details: 响应式页面，能够兼容多种设备。在不同端的设备上，实现相同的浏览体验。
 footer: Be 栗子🌰 | Copyright © 2024
 ---
+
+访问 https://tlevi.netlify.app/ 即可访问到网站
+
+部署 https://app.netlify.com/sites/tlevi/overview
